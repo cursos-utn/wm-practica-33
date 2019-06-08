@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario de alta</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container">
+		<h2>Formulario de alta</h2>
+		<form action="formulario_alta.php" method="post">
+			
+			<div class="form-group">
+				<label for="nombre">Nombre</label>
+				<input type="text" class="form-control" id="nombre" name="nombre">
+			</div>
+
+			<div class="form-group">
+				<label for="album">Album</label>
+				<input type="text" class="form-control" id="album" name="album">
+			</div>
+
+
+			<div class="form-group">
+				<label for="artista">Artista</label>
+				<input type="text" class="form-control" id="artista" name="artista">
+			</div>
+
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary">Guardar</button>
+			</div>
+
+
+		</form>
+	</div>
+</body>
+</html>
