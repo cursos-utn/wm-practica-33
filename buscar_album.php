@@ -41,7 +41,7 @@ if ($rta == false) {
         <?php
 
         if (mysqli_num_rows($rta) == 0) {
-            echo "esta canción no está en nuestra lista actualmente";
+            echo "este album no está en nuestra lista actualmente";
             die();
         }
 

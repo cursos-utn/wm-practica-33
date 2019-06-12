@@ -41,7 +41,7 @@ if ($rta == false) {
         <?php
 
         if (mysqli_num_rows($rta) == 0) {
-            echo "esta canción no está en nuestra lista actualmente";
+            echo "este artista no está en nuestra lista actualmente";
             die();
         }
 
@@ -49,17 +49,17 @@ if ($rta == false) {
         echo "<table class='table'>
                 <tr>
                     <th>Nombre</th>
-                    <th>artista</th>
+                    <th>Album</th>
                     <th>Artista</th>
                 </tr>";
         while ($unRegistro = mysqli_fetch_array($rta)) {
             $nombre = $unRegistro['nombre'];
-            $artista = $unRegistro['artista'];
+            $album = $unRegistro['album'];
             $artista = $unRegistro['artista'];
 
             echo "<tr>
                     <td>$nombre</td>
-                    <td>$artista</td>
+                    <td>$album</td>
                     <td>$artista</td>
                  </tr>";
         }
